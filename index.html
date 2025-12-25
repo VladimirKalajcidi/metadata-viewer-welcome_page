@@ -9,8 +9,9 @@
     .wrap{max-width:760px; margin:48px auto; padding:0 20px}
     h1{font-size:36px; margin:0 0 40px; text-align:center; font-weight:600}
     .step-text{font-size:18px; margin:24px 0; font-weight:500}
-    .screenshot-container{width:100%; margin:24px 0; display:flex; justify-content:center; align-items:center; overflow:visible; background:transparent; position:relative}
-    .screenshot{max-width:120%; width:auto; height:auto; border-radius:16px; display:block; filter:drop-shadow(0 8px 24px rgba(0,0,0,0.5)) drop-shadow(0 4px 12px rgba(0,0,0,0.4)) drop-shadow(0 2px 6px rgba(0,0,0,0.3)); object-fit:contain; image-rendering:auto; background:transparent}
+    .screenshot-container{width:100%; margin:24px 0; display:flex; justify-content:center; align-items:center; overflow:visible; background:transparent; position:relative; padding:20px}
+    .screenshot-wrapper{display:inline-block; border-radius:20px; overflow:hidden; box-shadow:0 12px 48px rgba(0,0,0,0.7), 0 6px 24px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.4); filter:drop-shadow(0 10px 30px rgba(0,0,0,0.6))}
+    .screenshot{max-width:120%; width:auto; height:auto; display:block; object-fit:contain; image-rendering:auto}
   </style>
 </head>
 <body>
@@ -19,12 +20,16 @@
     
     <p class="step-text">1. Pin the extension for quick access</p>
     <div class="screenshot-container">
-      <img src="screens/1.png" alt="Screenshot 1" class="screenshot">
+      <div class="screenshot-wrapper">
+        <img src="screens/1.png" alt="Screenshot 1" class="screenshot">
+      </div>
     </div>
     
     <p class="step-text">2. Click on the extension icon and activate Metadata Viewer!</p>
     <div class="screenshot-container">
-      <img src="screens/2.png" alt="Screenshot 2" class="screenshot">
+      <div class="screenshot-wrapper">
+        <img src="screens/2.png" alt="Screenshot 2" class="screenshot">
+      </div>
     </div>
   </div>
 </body>
